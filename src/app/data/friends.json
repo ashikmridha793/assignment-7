@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Rahim Uddin",
+        "picture": "https://i.pravatar.cc/150?img=1",
+        "email": "rahim@gmail.com",
+        "days_since_contact": 12,
+        "last_contact": "12d ago",
+        "status": "overdue",
+        "tags": [
+            "friend"
+        ],
+        "bio": "Met in college. Love traveling together.",
+        "goal": 10,
+        "next_due_date": "2026-04-20"
+    },
+    {
+        "id": 2,
+        "name": "Karim Hasan",
+        "picture": "https://i.pravatar.cc/150?img=2",
+        "email": "karim@gmail.com",
+        "days_since_contact": 5,
+        "last_contact": "5d ago",
+        "status": "on-track",
+        "tags": [
+            "work"
+        ],
+        "bio": "Office colleague.",
+        "goal": 14,
+        "next_due_date": "2026-04-25"
+    },
+    {
+        "id": 3,
+        "name": "Sakib Ahmed",
+        "picture": "https://i.pravatar.cc/150?img=3",
+        "email": "sakib@gmail.com",
+        "days_since_contact": 9,
+        "last_contact": "9d ago",
+        "status": "almost due",
+        "tags": [
+            "school"
+        ],
+        "bio": "School friend.",
+        "goal": 10,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 4,
+        "name": "Nusrat Jahan",
+        "picture": "https://i.pravatar.cc/150?img=5",
+        "email": "nusrat@gmail.com",
+        "days_since_contact": 2,
+        "last_contact": "2d ago",
+        "status": "on-track",
+        "tags": [
+            "family"
+        ],
+        "bio": "Cousin.",
+        "goal": 7,
+        "next_due_date": "2026-04-28"
+    },
+    {
+        "id": 5,
+        "name": "Tanvir Rahman",
+        "picture": "https://i.pravatar.cc/150?img=4",
+        "email": "tanvir@gmail.com",
+        "days_since_contact": 15,
+        "last_contact": "5d ago",
+        "status": "overdue",
+        "tags": [
+            "gym"
+        ],
+        "bio": "Gym partner.",
+        "goal": 10,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 6,
+        "name": "Mim Akter",
+        "picture": "https://i.pravatar.cc/150?img=6",
+        "email": "mim@gmail.com",
+        "days_since_contact": 6,
+        "last_contact": "6d ago",
+        "status": "almost due",
+        "tags": [
+            "university"
+        ],
+        "bio": "Classmate.",
+        "goal": 7,
+        "next_due_date": "2026-04-19"
+    },
+    {
+        "id": 7,
+        "name": "Arif Khan",
+        "picture": "https://i.pravatar.cc/150?img=7",
+        "email": "arif@gmail.com",
+        "days_since_contact": 3,
+        "last_contact": "3d ago",
+        "status": "on-track",
+        "tags": [
+            "neighbor"
+        ],
+        "bio": "Neighbor friend.",
+        "goal": 10,
+        "next_due_date": "2026-04-30"
+    },
+    {
+        "id": 8,
+        "name": "Sadia Islam",
+        "picture": "https://i.pravatar.cc/150?img=8",
+        "email": "sadia@gmail.com",
+        "days_since_contact": 11,
+        "last_contact": "11d ago",
+        "status": "overdue",
+        "tags": [
+            "college"
+        ],
+        "bio": "College friend.",
+        "goal": 10,
+        "next_due_date": "2026-04-17"
+    },
+    {
+        "id": 9,
+        "name": "Jahid Hossain",
+        "picture": "https://i.pravatar.cc/150?img=9",
+        "email": "jahid@gmail.com",
+        "days_since_contact": 7,
+        "last_contact": "7d ago",
+        "status": "almost due",
+        "tags": [
+            "office"
+        ],
+        "bio": "Office friend.",
+        "goal": 10,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 10,
+        "name": "Riya Chowdhury",
+        "picture": "https://i.pravatar.cc/150?img=10",
+        "email": "riya@gmail.com",
+        "days_since_contact": 1,
+        "last_contact": "1d ago",
+        "status": "on-track",
+        "tags": [
+            "best friend"
+        ],
+        "bio": "Best friend forever.",
+        "goal": 5,
+        "next_due_date": "2026-05-01"
+    },
+    {
+        "id": 11,
+        "name": "Rahim choudhury",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sara",
+        "email": "rahim@gmail.com",
+        "days_since_contact": 6,
+        "last_contact": "6d ago",
+        "status": "on-track",
+        "tags": [
+            "work"
+        ],
+        "bio": "Office colleague.",
+        "goal": 14,
+        "next_due_date": "2026-04-25"
+    },
+    {
+        "id": 12,
+        "name": "Sumaiya Akter",
+        "picture": "https://i.pravatar.cc/150?img=15",
+        "email": "sumaiya@gmail.com",
+        "days_since_contact": 9,
+        "last_contact": "9d ago",
+        "status": "due",
+        "tags": [
+            "school"
+        ],
+        "bio": "School friend.",
+        "goal": 10,
+        "next_due_date": "2026-04-18"
+    }
+]
