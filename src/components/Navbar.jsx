@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 
 const NavbarPage = () => {
     const links = <>
-    <li><Link href='/'>Home</Link></li>
+        <li><Link href='/'>Home</Link></li>
         <li><Link href='/timeline'>Timeline</Link></li>
         <li><Link href='/stats'>Stats</Link></li>
     </>
