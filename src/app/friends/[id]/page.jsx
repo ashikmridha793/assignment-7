@@ -82,7 +82,7 @@ const FriendDetailPage =  ({ params }) => {
                     </div>
                     <div className='bg-white p-4 shadow rounded text-center'>
                         <h3 className='font-bold text-3xl'>{friend.goal}</h3>
-                        <p className='text-gray-600'>Goal (Days)</p>
+                        <p className='text-gray-600 '>Goal (Days)</p>
                     </div>
                     <div className='bg-white p-4 shadow rounded text-center'>
                         <h3 className='font-bold text-2xl'>
@@ -99,7 +99,8 @@ const FriendDetailPage =  ({ params }) => {
                             <h3 className='font-semibold text-[#244D3F]'>Relationship Goal</h3>
                             <a className='btn rounded-full text-xs'>Edit</a>
                         </div>
-                        <p className='text-gray-600'>Connect every <b>{friend.goal}</b> days</p>
+                        <p className='text-gray-600'>Connect every<span className='font-semibold'> <b>{friend.goal}</b> days</span>
+                        </p>
                     </div>
                     <div className='mt-6 border-t border-gray-200 pt-8'>
                         <h3 className='font-semibold text-[#244D3F]'>Quick Check-In</h3>

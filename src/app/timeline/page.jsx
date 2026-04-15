@@ -3,11 +3,16 @@ import React, { useEffect, useState } from 'react';
 
 const page = () => {
     const [timeline, setTimeline] = useState([]);
+    const [filter, setFilter] = useState('all');
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem('timeline')) || [];
         setTimeline(data);
     }, []);
+    const filteredTimeline = 
+        filter === 'all' 
+        ? timeline 
+        : timeline.filter(item => item.type === filter);
 
     const getIcon = (type) => {
         if (type === 'call') return '📞';
@@ -20,20 +25,29 @@ const page = () => {
         <div className='p-6 md:w-8/12 mx-auto'>
             <h1 className='text-3xl font-bold text-left'>Timeline</h1>
 
+            <div className='my-4 w-full flex justify-start'>
+                <select value={filter} onChange={(e) => setFilter(e.target.value)} className='btn'>
+                    <option value='all'>All</option>
+                    <option value='call'>Calls</option>
+                    <option value='message'>Messages</option>
+                    <option value='video'>Video Calls</option>
+                </select>
+            </div>
+
             {timeline.length === 0 ? (
                 <p className='text-gray-600'>No interactions yet</p>
             ) : (
-                    timeline.map((item) => (
-                        <div key={item.id} className='bg-white shadow-md p-4 rounded-lg mb-4 flex items-center gap-4'>
-                            <div className='text-2xl'>{getIcon(item.type)}</div>
-                            <div>
-                                <p className='font-semibold'>{item.title}</p>
-                                <p className='text-gray-600 text-sm'>
-                                    {new Date(item.date).toDateString()}
-                                </p>
-                            </div>
+                filteredTimeline.map((item) => (
+                    <div key={item.id} className='bg-white shadow-md p-4 rounded-lg mb-4 flex items-center gap-4'>
+                        <div className='text-2xl'>{getIcon(item.type)}</div>
+                        <div>
+                            <p className='font-semibold text-stone-600'>{item.title}</p>
+                            <p className='text-gray-500 text-sm'>
+                                {new Date(item.date).toDateString()}
+                            </p>
                         </div>
-                    ))
+                    </div>
+                ))
             )}
         </div>
     );
