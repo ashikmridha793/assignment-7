@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This Assignment Name is keenkeeper
+## Description
+KeenKeper is a web-based application designed to solve real-world problems by an efficient and user-friendly Experience. It allows users to monitor interaction frequency, set contact goals, and calls, texts, or video chats to ensure no friendship fades away.
 
-## Getting Started
 
-First, run the development server:
+## Technologies Used
+-React.js
+-Next.js
+-Recharts
+-react Toastify(for notificarions)
+and more for needed
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+``Key Features
+1, Friend Managment System
+-Despaly all friend in a responsice card layout 
+-Each friend shows profile picture, name, tags, and contact status
+-click any card to view detailed information
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2, Interaction Tracking & timeline
+3, Friendship Analytics Dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Core Functionality 
+-Fully functional Navbar with active route highlighting
+-Banner section with summary cards
+-Friend Details page
+-timeline page
+-State page with analytics
+-404 page with click on the footer links
+-loading spinner while fetching data 
+-fully responsiv  
