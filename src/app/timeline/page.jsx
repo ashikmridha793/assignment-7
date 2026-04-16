@@ -21,21 +21,27 @@ const page = () => {
         return '📝';
     }
 
+    const handleClearTimeline = () => {
+        localStorage.removeItem("timeline");
+        setTimeline([]);
+    }
     return (
-        <div className='p-6 md:w-8/12 mx-auto'>
-            <h1 className='text-3xl font-bold text-left'>Timeline</h1>
-
-            <div className='my-4 w-full flex justify-start'>
+        <div className='p-4 md:p-6 md:w-8/12 mx-auto'>
+                <h1 className='text-3xl font-bold text-left'>Timeline</h1>
+            <div className='my-4 w-full flex justify-between gap-4'>
                 <select value={filter} onChange={(e) => setFilter(e.target.value)} className='btn'>
                     <option value='all'>All</option>
                     <option value='call'>Calls</option>
                     <option value='message'>Messages</option>
                     <option value='video'>Video Calls</option>
                 </select>
+                <button onClick={handleClearTimeline} className='btn btn-outline bg-red-100 text-red-600 hover:bg-red-600 hover:text-white'>
+                    Clear
+                </button>
             </div>
 
             {timeline.length === 0 ? (
-                <p className='text-gray-600'>No interactions yet</p>
+                <p className='text-gray-700 text-2xl text-center py-5'>No interactions yet</p>
             ) : (
                 filteredTimeline.map((item) => (
                     <div key={item.id} className='bg-white shadow-md p-4 rounded-lg mb-4 flex items-center gap-4'>
