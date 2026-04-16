@@ -1,13 +1,14 @@
+"use client";
 import React from 'react';
 
-const loading = () => {
+const Loading = () => {
     return (
         <div>
-            <div className='fixed inset-0 flex items-center justify-center bg-white/60 z-50'>
+            <div className='fixed inset-0 flex items-center justify-center bg-blue/50 z-50'>
                 <span className="loading loading-spinner text-success"></span>
             </div>
         </div>
     );
 };
 
-export default loading;
+export default Loading;

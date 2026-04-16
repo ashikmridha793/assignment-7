@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import FooterLogo from '../assets/logo-xl.png'
@@ -14,23 +15,39 @@ const Footer = () => {
                 <p className='mt-2 text-gray-400'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <p className='mt-4 font-semibold text-white'>Social Links</p>
                 <div className='flex justify-center gap-4 mt-2'>
-                    <a href="#" className='text-gray-400 hover:text-white'>
+                    <a href="#"
+                        className='text-gray-400 hover:text-white'>
                         <Image src={facebook} alt="Facebook" className='w-6 h-6' />
                     </a>
-                    <a href="#" className='text-gray-400 hover:text-white'>
+                    <a href="#"
+                        className='text-gray-400 hover:text-white'>
                         <Image src={twitter} alt="Twitter" className='w-6 h-6' />
                     </a>
-                    <a href="#" className='text-gray-400 hover:text-white'>
+                    <a href="#"
+                        className='text-gray-400 hover:text-white'>
                         <Image src={instagram} alt="Instagram" className='w-6 h-6' />
                     </a>
                 </div>
             </div>
+
             <div className='flex flex-col md:flex-row justify-between items-center mt-6 w-8/12 mx-auto border-t border-gray-600 pt-6'>
                 <p className='text-gray-500 text-xs'>© 2026 KeenKeeper. All rights reserved.</p>
                 <ul className='flex flex-col md:flex-row md:gap-5 mt-2 text-xs space-y-2 md:space-y-0'>
-                    <li><a href="#" className='text-gray-500 hover:text-white'>Privacy Policy</a></li>
-                    <li><a href="#" className='text-gray-500 hover:text-white'>Terms of Service</a></li>
-                    <li><a href="#" className='text-gray-500 hover:text-white'>Cookies</a></li>
+                    <li>
+                        <Link href="/Privacy Policy" className='text-gray-500 hover:text-white'>
+                            Privacy Policy
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/Terms of Service" className='text-gray-500 hover:text-white'>
+                            Terms of Service
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/Cookies" className='text-gray-500 hover:text-white'>
+                            Cookies
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>

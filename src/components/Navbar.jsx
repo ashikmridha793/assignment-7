@@ -7,25 +7,25 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
     const pathname = usePathname();
-  
+
     const links = <>
         <li><Link
             href='/'
             className={pathname === '/' ? 'bg-[#244D3F] font-semibold text-white' : ''}
         >Home</Link></li>
 
-        <li><Link 
-        href='/timeline'
-        className={pathname === '/timeline' ? 'bg-[#244D3F] font-semibold text-white' : ''}
+        <li><Link
+            href='/timeline'
+            className={pathname === '/timeline' ? 'bg-[#244D3F] font-semibold text-white' : ''}
         >Timeline</Link></li>
-        <li><Link 
-        href='/stats'
-        className={pathname === '/stats' ? 'bg-[#244D3F] font-semibold text-white' : ''}
+        <li><Link
+            href='/stats'
+            className={pathname === '/stats' ? 'bg-[#244D3F] font-semibold text-white' : ''}
         >Stats</Link></li>
     </>
- 
 
-    return ( 
+
+    return (
         <div className="navbar bg-base-100 shadow-lg md:px-17">
             <div className="flex-1">
                 <Image src={logo} alt="logo" />
