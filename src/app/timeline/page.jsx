@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import { FaDeleteLeft } from 'react-icons/fa6';
 
 const page = () => {
     const [timeline, setTimeline] = useState([]);
@@ -36,7 +37,7 @@ const page = () => {
                     <option value='video'>Video Calls</option>
                 </select>
                 <button onClick={handleClearTimeline} className='btn btn-outline bg-red-100 text-red-600 hover:bg-red-600 hover:text-white'>
-                    Clear
+                   <FaDeleteLeft /> Clear
                 </button>
             </div>
 

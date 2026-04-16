@@ -7,9 +7,11 @@ import Text from '../../../assets/text.png';
 import Video from '../../../assets/video.png';
 import { toast } from 'react-toastify';
 import { useParams } from 'next/navigation';
+import { FaBell, FaDeleteLeft, FaTrash } from 'react-icons/fa6';
+import { FaArchive, FaShopify, FaVectorSquare, FaVestPatches } from 'react-icons/fa';
 
 
-const FriendDetailPage =  ({ params }) => {
+const FriendDetailPage = ({ params }) => {
     const { id } = useParams();
     const friend = friends.find((f) => f.id === Number(id));
     if (!friend) {
@@ -60,13 +62,13 @@ const FriendDetailPage =  ({ params }) => {
 
                     <div className='mt-6'>
                         <button className='w-full btn bg-gray-100 py-2 rounded'>
-                            Snooze 2 weeks
+                            <FaBell />  Snooze 2 weeks
                         </button>
                         <button className='w-full btn bg-gray-100 py-2 rounded'>
-                            Archive
+                            <FaArchive /> Archive
                         </button>
                         <button className='w-full btn text-red-500 bg-gray-100 py-2 rounded hover:bg-red-100'>
-                            Delete
+                            <FaTrash /> Delete
                         </button>
                     </div>
                 </div>

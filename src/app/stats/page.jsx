@@ -31,9 +31,8 @@ const StatsPage = () => {
     return (
         <div className='p-6 md:w-8/12 mx-auto'>
             <h1 className='text-2xl md:text-5xl font-bold mb-6'>Friendship Analytics</h1>
-
             <div className='bg-white rounded-lg shadow-lg p-3 md:p-6'>
-                <h2 className='text-lg md:text-xl font-semibold mb-4 md:p-8'>By Interaction Type</h2>
+                <h2 className='text-lg text-[#244D3F] md:text-xl font-semibold mb-4 md:p-8'>By Interaction Type</h2>
                 <div>
                     <ResponsiveContainer width="100%" height={300}>
                         <PieChart>

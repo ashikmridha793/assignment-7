@@ -15,18 +15,18 @@ const Footer = () => {
                 <p className='mt-2 text-gray-400'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <p className='mt-4 font-semibold text-white'>Social Links</p>
                 <div className='flex justify-center gap-4 mt-2'>
-                    <a href="#"
+                    <Link href="/facebook"
                         className='text-gray-400 hover:text-white'>
                         <Image src={facebook} alt="Facebook" className='w-6 h-6' />
-                    </a>
-                    <a href="#"
+                    </Link>
+                    <Link href="/twitter"
                         className='text-gray-400 hover:text-white'>
                         <Image src={twitter} alt="Twitter" className='w-6 h-6' />
-                    </a>
-                    <a href="#"
+                    </Link>
+                    <Link href="/intagram"
                         className='text-gray-400 hover:text-white'>
                         <Image src={instagram} alt="Instagram" className='w-6 h-6' />
-                    </a>
+                    </Link>
                 </div>
             </div>
 
